@@ -1,0 +1,33 @@
+Zend Server/CE Cache Adapter for Joomla! 1.6
+--------------------------------------------
+
+
+INSTALLATION
+------------
+
+In order to use this adapter you have to run Joomla! 1.6 using Zend Server.
+You can download the Community Edition of Zend Server for free from this website:
+http://www.zend.com/en/products/server-ce/downloads
+
+To install the Zend Server Cache adapter for Joomla! 1.6:
+
+1) Copy all the *.php files of the zip package in the joomla folder:
+libraries/joomla/cache/storage/
+
+2) Edit the files administrator/language/xx-XX/xx-XX.ini and administrator/language/en-GB/en-GB.ini and add the following lines:
+JLIB_FORM_VALUE_CACHE_ZENDSERVERDISK="Zend Server Cache Disk"
+JLIB_FORM_VALUE_CACHE_ZENDSERVERSHM="Zend Server Cache Shm"
+
+
+CONFIGURATION
+-------------
+
+To configure Joomla! 1.6 to use the Zend Server Cache adapter go to the Administration page > Global configuration > System > Cache settings. 
+Enable the cache choosing ON - Conservative caching (or ON - Progressive caching).
+Choose the Zend Server Cache Disk or Shm adapter.
+
+To configure the Zend Data Cache you have to go to the Zend Server management console > Server Setup > Components > Zend Data Cache Directives.
+
+
+(C) Copyright 2010 Enrico Zimuel (enrico@zimuel.it)
+More info on http://www.zimuel.it/blog
